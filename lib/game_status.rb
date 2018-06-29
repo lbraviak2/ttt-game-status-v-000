@@ -8,33 +8,33 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  combo = []
   board.all? { |e| e == " " || e == ""}
-
+  
   if board[0] == board[1] && board[0] === board[2] && (board[0] == "X" || board[0] == "O")
     true
-    WIN_COMBINATIONS[0]
+    combo = WIN_COMBINATIONS[0]
   elsif  board[3] == board[4] && board[3] === board[5] && (board[5] == "X" || board[5] == "O")
     true
-    WIN_COMBINATIONS[1]
+    combo = WIN_COMBINATIONS[1]
   elsif board[6] == board[7] && board[6] === board[8] && (board[8] == "X" || board[8] == "O")
     true
-    WIN_COMBINATIONS[2]
+    combo = WIN_COMBINATIONS[2]
   elsif board[0] == board[4] && board[0] === board[8] && (board[8] == "X" || board[8] == "O")
     true
-    WIN_COMBINATIONS[3]
+    combo = WIN_COMBINATIONS[3]
   elsif board[2] == board[4] && board[2] === board[6] && (board[6] == "X" || board[6] == "O")
     true
-    WIN_COMBINATIONS[4]
+    combo = WIN_COMBINATIONS[4]
   elsif  board[0] == board[3] && board[0] === board[6] && (board[6] == "X" || board[6] == "O")
     true
-    WIN_COMBINATIONS[5]
+    combo =WIN_COMBINATIONS[5]
   elsif  board[1] == board[4] && board[1] === board[7] && (board[7] == "X" || board[7] == "O")
     true
-    WIN_COMBINATIONS[6]
+    combo = WIN_COMBINATIONS[6]
   elsif  board[2] == board[5] && board[2] === board[8] && (board[8] == "X" || board[8] == "O")
     true
-    WIN_COMBINATIONS[7]
+    combo = WIN_COMBINATIONS[7]
   else
     false
   end
@@ -64,5 +64,9 @@ def over?(board)
   else
     true
   end
+end
+
+def winner(board)
+  
 end
 # Define your WIN_COMBINATIONS constant
