@@ -43,8 +43,15 @@ def full?(board)
   check = board.any? { |item| item == "" || item == " "  }
   if check == true
     false
-  else
+  elsif won?(board) == false
     true
   end
+end
+
+def draw?(board)
+  if full?(board) == true
+    true
+  end
+
 end
 # Define your WIN_COMBINATIONS constant
