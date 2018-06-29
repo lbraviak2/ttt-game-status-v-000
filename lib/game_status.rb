@@ -46,6 +46,5 @@ def full?(board)
   else
     true
   end
-
 end
 # Define your WIN_COMBINATIONS constant
