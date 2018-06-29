@@ -67,7 +67,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == true
+  if won?(board) != false
     combo = 100
     combo = won?(board)
     position = Integer(combo[0])
