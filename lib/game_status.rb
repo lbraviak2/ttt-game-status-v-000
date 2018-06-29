@@ -71,7 +71,7 @@ def winner(board)
   combo = won?(board)
   position = Integer(combo[0])
   puts board[position]
-  eval = string(board[position])
+  eval = String(board[position])
   puts eval.type
   if eval == "X" && won?(board) == true
     return "X"
