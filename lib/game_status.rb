@@ -44,6 +44,6 @@ def full?(board)
 
   if check == false && won?(board) == false
     true
-
+  end
 end
 # Define your WIN_COMBINATIONS constant
