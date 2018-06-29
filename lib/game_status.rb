@@ -71,7 +71,7 @@ def winner(board)
   combo = won?(board)
   position = Integer(combo[0])
   winna = board[position]
-  
+
   if winna == "X" && won?(board) == true
     "X"
   elsif winna == "O" && won?(board) == true
