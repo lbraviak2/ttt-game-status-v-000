@@ -72,9 +72,9 @@ def winner(board)
   position = Integer(combo[0])
   puts board[position]
 
-  if board[position] == "X" && won?(board) == true
+  if string(board[position]) == "X" && won?(board) == true
     return "X"
-  elsif board[position] == "O" && won?(board) == true
+  elsif string(board[position]) == "O" && won?(board) == true
     return "O"
   else
     nil
