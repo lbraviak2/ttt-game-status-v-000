@@ -8,6 +8,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.any? { |e| e == "" || e == " " }
+  board.any? { |e| e == "" && e == " " }
 end
 # Define your WIN_COMBINATIONS constant
