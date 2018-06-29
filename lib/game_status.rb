@@ -55,8 +55,6 @@ def draw?(board)
 end
 
 def over?(board)
-  if
 
-  end
 end
 # Define your WIN_COMBINATIONS constant
