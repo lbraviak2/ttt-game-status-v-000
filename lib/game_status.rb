@@ -57,6 +57,16 @@ def draw?(board)
 end
 
 def over?(board)
+  if draw?(board) == true && won?(board) == false
+    true
+  elsif full?(board) == true && won?(board) == true
+    true
+  elsif won?(board) == true
+    true
+  else
+    false
+    
+  end
 
 end
 # Define your WIN_COMBINATIONS constant
