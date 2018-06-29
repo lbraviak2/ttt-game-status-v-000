@@ -8,7 +8,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.any? { |e| e == "" && e == " " }
+  board.all? { |e| e == "" && e == " " }
 
   if board[0] == board[1] && board[0] === board[2]
     true
