@@ -9,5 +9,19 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   board.any? { |e| e == "" && e == " " }
+  if board[0] == board[1] === board[2] 
+    true
+    WIN_COMBINATIONS[0]
+  elsif  board[3] == board[4] === board[5] 
+      true
+      WIN_COMBINATIONS[1]
+  elsif  board[6] == board[7] === board[8] 
+        true
+        WIN_COMBINATIONS[2]
+  elsif  board[0] == board[4] === board[8] 
+            true
+            WIN_COMBINATIONS[3]    
+  
+  
 end
 # Define your WIN_COMBINATIONS constant
