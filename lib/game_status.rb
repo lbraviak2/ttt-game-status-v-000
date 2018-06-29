@@ -67,17 +67,20 @@ def over?(board)
 end
 
 def winner(board)
-  combo = 100
-  combo = won?(board)
-  position = Integer(combo[0])
-  winna = String(board[position])
+  if won?(board) == true
+    combo = 100
+    combo = won?(board)
+    position = Integer(combo[0])
+    winna = String(board[position])
 
-  if winna == "X"
-    "X"
-  elsif winna == "O"
-    "O"
+    if winna == "X"
+      "X"
+    elsif winna == "O"
+      "O"
+    end
+  else
+    nil
   end
-
 
 end
 # Define your WIN_COMBINATIONS constant
