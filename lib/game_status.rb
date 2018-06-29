@@ -61,9 +61,6 @@ def over?(board)
     true
   elsif won?(board) == true
     true
-  else
-    false
-
   end
 
 end
