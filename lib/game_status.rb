@@ -74,7 +74,7 @@ def winner(board)
 
   if winna == "X"
     "X"
-  elsif winna == "O" 
+  elsif winna == "O"
     "O"
   else
     nil
