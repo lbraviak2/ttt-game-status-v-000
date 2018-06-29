@@ -74,9 +74,9 @@ def winner(board)
   eval = String(board[position])
   puts eval.type
   if eval == "X" && won?(board) == true
-    return "X"
+    "X"
   elsif eval == "O" && won?(board) == true
-    return "O"
+    "O"
   else
     nil
   end
