@@ -40,6 +40,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? { |item| item != "" || item != " "  }
+  check = board.any? { |item| item != "" || item != " "  }
+
+  if check == false && won?(board) == false
+    true
+      
 end
 # Define your WIN_COMBINATIONS constant
