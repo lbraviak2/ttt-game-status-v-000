@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   combo = []
   board.all? { |e| e == " " || e == ""}
-  
+
   if board[0] == board[1] && board[0] === board[2] && (board[0] == "X" || board[0] == "O")
     true
     combo = WIN_COMBINATIONS[0]
@@ -67,6 +67,6 @@ def over?(board)
 end
 
 def winner(board)
-  
+
 end
 # Define your WIN_COMBINATIONS constant
