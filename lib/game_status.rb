@@ -13,7 +13,7 @@ def won?(board)
   if board[0] == board[1] && board[0] === board[2]
     true
     WIN_COMBINATIONS[0]
-  elsif  board[3] == board[4] && board[1] === board[5]
+  elsif  board[3] == board[4] && board[3] === board[5]
     true
     WIN_COMBINATIONS[1]
   elsif board[6] == board[7] && board[6] === board[8]
