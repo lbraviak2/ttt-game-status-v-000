@@ -70,11 +70,11 @@ def winner(board)
   combo = 100
   combo = won?(board)
   position = Integer(combo[0])
-  puts board[position]
-  eval = String(board[position])
-  if eval == "X" && won?(board) == true
+  winna = board[position]
+  
+  if winna == "X" && won?(board) == true
     "X"
-  elsif eval == "O" && won?(board) == true
+  elsif winna == "O" && won?(board) == true
     "O"
   else
     nil
