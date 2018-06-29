@@ -40,7 +40,7 @@ def won?(board)
 end
 
 def full?(board)
-  check = board.include? { |item| item == "" || item == " "  }
+  check = board.any? { |item| item == "" || item == " "  }
   if check == true
     false
   else
