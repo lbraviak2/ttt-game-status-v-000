@@ -68,7 +68,7 @@ end
 
 def winner(board)
   combo = []
-  combo << won?(board)[1]
-  puts combo
+  combo = won?(board)
+  puts combo[1]
 end
 # Define your WIN_COMBINATIONS constant
