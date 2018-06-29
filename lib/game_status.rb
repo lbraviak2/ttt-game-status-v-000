@@ -16,7 +16,7 @@ def won?(board)
 
   elsif  board[3] == board[4] && board[3] === board[5] && (board[5] == "X" || board[5] == "O")
     combo[true, WIN_COMBINATIONS[1]]
-    
+
   elsif board[6] == board[7] && board[6] === board[8] && (board[8] == "X" || board[8] == "O")
     combo[true, WIN_COMBINATIONS[2]]
 
