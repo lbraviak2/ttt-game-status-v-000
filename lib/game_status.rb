@@ -35,6 +35,8 @@ def won?(board)
   elsif  board[2] == board[5] && board[2] === board[8] && (board[8] == "X" || board[8] == "O")
     true
     WIN_COMBINATIONS[7]
+  else
+    false
   end
 
 end
