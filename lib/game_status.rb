@@ -67,12 +67,6 @@ def over?(board)
 end
 
 def winner(board)
-  if board[combo[0]] == "X" && won?(board) == true
-    "X"
-  elsif won?(board) == true
-    "0"
-  elsif won?(board) == false
-    nil
-  end
+  puts won?(board)
 end
 # Define your WIN_COMBINATIONS constant
