@@ -72,9 +72,9 @@ def winner(board)
   position = Integer(combo[0])
   winna = String(board[position])
 
-  if winna == "X" && won?(board) == true
+  if winna == "X"
     "X"
-  elsif winna == "O" && won?(board) == true
+  elsif winna == "O" 
     "O"
   else
     nil
