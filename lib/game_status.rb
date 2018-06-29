@@ -67,7 +67,7 @@ def over?(board)
 end
 
 def winner(board)
-  combo = [1,2,3]
+  combo = []
   combo = won?(board)
   puts combo
   if board[combo[0]] == "X" && won?(board) == true
