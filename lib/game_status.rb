@@ -70,7 +70,7 @@ def winner(board)
   combo = 100
   combo = won?(board)
   position = Integer(combo[0])
-  winna = board[position]
+  winna = String(board[position])
 
   if winna == "X" && won?(board) == true
     "X"
