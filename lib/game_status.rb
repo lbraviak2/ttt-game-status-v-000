@@ -69,6 +69,7 @@ end
 def winner(board)
   combo = []
   combo = won?(board)
-  puts combo[1]
+  if board[combo[0]] == "X" && won?(board) == true
+    "X"
 end
 # Define your WIN_COMBINATIONS constant
