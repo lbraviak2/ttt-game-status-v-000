@@ -70,8 +70,16 @@ def winner(board)
   combo = []
   combo = won?(board)
   position = Integer(combo[0])
-  puts position
   puts board[position]
+
+  if board[position] == "X" && won?(board) == true
+    return "X"
+  elsif board[position] == "O" && won?(board) == true
+    return "O"
+  else
+    nil
+  end
+
 
 end
 # Define your WIN_COMBINATIONS constant
