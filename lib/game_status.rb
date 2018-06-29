@@ -67,7 +67,7 @@ def over?(board)
 end
 
 def winner(board)
-  combo = []
+  combo = 100
   combo = won?(board)
   position = Integer(combo[0])
   puts board[position]
