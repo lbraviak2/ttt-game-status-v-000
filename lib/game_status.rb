@@ -69,8 +69,8 @@ end
 def winner(board)
   combo = []
   combo = won?(board)
-  puts combo[1]
-  if board[combo[0]] == "X" && won?(board) == true
+  position = Integer(combo[1])
+  if board[position] == "X" && won?(board) == true
     "X"
   end
 end
